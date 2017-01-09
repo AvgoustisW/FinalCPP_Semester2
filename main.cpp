@@ -84,14 +84,14 @@ void print_for_top_ten(int size, string *afm, list<TaxDeclaration*> ***li, int f
       }
     }
     if (counter == 15){
-			counter = 0;
-			yo_wait(18, "Press anything for more.");
-			werase(wm);
-		}
+		counter = 0;
+		yo_wait(18, "Press anything for more.");
+		werase(wm);
+	}
   }
 }
 
-//Getd user input for choice 2 and choice 3, choosing a Tax Declaration by the IRS Number
+//Get user input for choice 2 and choice 3, choosing a Tax Declaration by the IRS Number
 
 void get_user_choice(char *choice, int size){
 	curs_set(1);
@@ -498,7 +498,7 @@ void menu(){
 	do{
 		werase(wm);
 		mvwprintw(wm, 2, 16, "MENU");
-		for(int i = 0; i < 5; i++){
+		for(i = 0; i < 5; i++){
 			if(i == Cur)
 				wattr_on(wm, A_REVERSE, 0);
 			mvwprintw(wm, 4+i, 5, Items[i]);
@@ -649,7 +649,7 @@ void submenu_4(list<TaxDeclaration*> *li){
 	do{
 		werase(wm);
 		mvwprintw(wm, 2, 16, "Submenu 4");
-		for(int i = 0; i < 4; i++){
+		for(i = 0; i < 4; i++){
 			if(i == Cur)
 				wattr_on(wm, A_REVERSE, 0);
 			mvwprintw(wm, 4+i, 5, Items[i]);
